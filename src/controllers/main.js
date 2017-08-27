@@ -13,12 +13,11 @@ class main {
         this.loaderService.showLoader();
         
         this.apiService.getAll().then(results => {
-            console.log('results', results);
             this.loaderService.hideLoader();
-            this.$.$digest();
-
             this.$.currentWeather = results[0];
             this.$.dailyWeather = results[1];
+
+            this.$.$digest();
         });        
     }
 }

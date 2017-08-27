@@ -1,0 +1,17 @@
+<div class='current-weather'>
+	<div class='content'>
+		<div class='condition'>
+			
+			{{data.weather[0].main}}
+			
+			<div class='des' ng-bind='data.weather[0].description'>
+			</div>			
+		</div>
+		
+		<div class='place' ng-bind='data.name'>
+		</div>
+		
+		<div class='temp' ng-bind-html='data.main.temp | temp'>
+		</div>
+	</div>
+</div>

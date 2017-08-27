@@ -1,0 +1,29 @@
+.current-weather {
+    height: 50vh;
+    background: #32c4bb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .content {
+        padding: 10px;
+        text-align: center;
+        color: white;
+
+        .condition {
+            font-size: $baseFontSize * 2;
+
+            .des {
+                font-size: $baseFontSize - 2;
+            }   
+        }
+
+        .place {
+            font-size: $baseFontSize * 1.5;
+        }
+
+        .temp {
+            font-size: $baseFontSize * 2.5;
+        }
+    }
+}

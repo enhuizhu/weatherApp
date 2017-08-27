@@ -1,0 +1,10 @@
+<div class='daily-weather'>
+	<div ng-repeat='item in data' class='weather-item'>
+		<div class='day' ng-bind='item.dt | time'></div>
+		<div class='temp' ng-bind-html='item.temp.day | temp'></div>
+		<div class='condition' ng-bind='item.weather[0].main'></div>
+		<div class='icon'>
+			<img ng-src='./src/styles/images/{{item.weather[0].icon}}.png'/>
+		</div>
+	</div>
+</div>

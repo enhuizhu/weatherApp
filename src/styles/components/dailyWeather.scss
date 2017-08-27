@@ -1,0 +1,30 @@
+.daily-weather {
+	height: 50vh;
+	padding-top: 10px;
+	overflow: auto;
+
+	.weather-item {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 0 10px;		
+
+		.day {
+			width: 127px;
+		}
+
+		.temp {
+			width: 100px;
+		}
+
+		.condition {
+			width: 100px;
+		}
+
+		.icon {
+			width: 100px;
+			position: relative;
+			top: -10px;
+		}
+	}	
+}
